@@ -13,7 +13,7 @@ getgenv().Tapped = {
     ['Silent Aim'] = {
         ['Enabled'] = true,
         ['Targetting'] = {
-            ['Keybind Enabled'] = true,
+            ['Keybind Enabled'] = false,
             ['Keybind'] = "P",
         },
         ['Checks'] = {
@@ -134,7 +134,7 @@ getgenv().Tapped = {
         ['Circle'] = {
             ['Silent'] = {
                 ['Visible'] = true,
-                ['Stick'] = false,
+                ['Stick'] = true,
                 ['Filled'] = false,
                 ['Size'] = 32,
                 ['Thickness'] = 1,
