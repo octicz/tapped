@@ -37,9 +37,9 @@ getgenv().Tapped = {
         },
     },
     ['Cam Lock'] = {
-        ['Enabled'] = false,
+        ['Enabled'] = true,
         ['Prediction'] = 0.133,
-        ['Key'] = "nil",
+        ['Key'] = "C",
         ['Notify'] = true,
         ['Point'] = "Head",
         ['Point Offset'] = 0,
@@ -48,7 +48,7 @@ getgenv().Tapped = {
         ['Dot'] = false,
         ['Smoothness'] = {
             ['Enabled'] = true,
-            ['Value'] = 0.058
+            ['Value'] = 1
         },
         ['Flags'] = {
             ['Unlock On KO'] = false,
