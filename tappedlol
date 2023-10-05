@@ -1,10 +1,12 @@
 getgenv().Tapped = {
-
+    ['Whitelist'] = {
+        ['LuaKey'] = "Place ur luarmor key here",
+    },
     ['Configuration'] = {
         ['Checks'] = {
             ['Auto Mute Boombox'] = true,
             ['Auto Low GFX'] = true,
-            ['Esp Box'] = false,
+            ['Esp Box'] = true,
         },
         ['Loader'] = {
             ['Enabled'] = true,
@@ -14,7 +16,7 @@ getgenv().Tapped = {
         ['Enabled'] = true,
         ['Targetting'] = {
             ['Keybind Enabled'] = false,
-            ['Keybind'] = "P",
+            ['Keybind'] = "M",
         },
         ['Checks'] = {
             ['Wall'] = true,
@@ -23,15 +25,15 @@ getgenv().Tapped = {
             ['Picked'] = true,
         },
         ['Config'] = {
-            ['Hit Chance'] = 400,
+            ['Hit Chance'] = 100,
             ['Points'] = {
                 ['Point'] = "UpperTorso",
                 ['Point Offset'] = 0,
-                ['Nearest Part'] = true,
+                ['Nearest Part'] = false,
                 ['Nearest Point'] = true,
             },
             ['Velocity'] = {
-                ['Prediction'] = 0.21,
+                ['Prediction'] = 0.13,
                 ['Anti Ground Shots'] = true,
             }
         },
@@ -39,7 +41,7 @@ getgenv().Tapped = {
     ['Cam Lock'] = {
         ['Enabled'] = true,
         ['Prediction'] = 0.133,
-        ['Key'] = "C",
+        ['Key'] = "E",
         ['Notify'] = true,
         ['Point'] = "Head",
         ['Point Offset'] = 0,
@@ -48,7 +50,7 @@ getgenv().Tapped = {
         ['Dot'] = false,
         ['Smoothness'] = {
             ['Enabled'] = true,
-            ['Value'] = 1
+            ['Value'] = 0.058
         },
         ['Flags'] = {
             ['Unlock On KO'] = false,
@@ -134,15 +136,15 @@ getgenv().Tapped = {
         ['Circle'] = {
             ['Silent'] = {
                 ['Visible'] = true,
-                ['Stick'] = true,
+                ['Stick'] = false,
                 ['Filled'] = false,
-                ['Size'] = 32,
+                ['Size'] = 100,
                 ['Thickness'] = 1,
                 ['Transparency'] = 1,
                 ['Color'] = Color3.fromRGB(1, 1, 1)
             },
             ['Aimbot'] = {
-                ['Visible'] = false,
+                ['Visible'] = true,
                 ['Filled'] = false,
                 ['Size'] = 32,
                 ['Thickness'] = 1,
@@ -152,15 +154,15 @@ getgenv().Tapped = {
         }
     },
     ['Panic'] = {
-        ['Enabled'] = false, 
-        ['KeyBind'] = "nil",
+        ['Enabled'] = true, 
+        ['KeyBind'] = "M",
     },
     ['Airshot'] = {
         ['Enabled'] = true,
         ['Point'] = "LowerTorso"
     },
     ['MemorySpoofer'] = {
-        ["MemSpoofer"] = false, 
+        ["MemSpoofer"] = true, 
         ["Minimum"] = 600, 
         ["Maximum"] = 950, 
     },  
@@ -169,18 +171,19 @@ getgenv().Tapped = {
         ['Korblox'] = true,
     },
     ['Fps_Unlocker'] = {
-        ['Enabled'] = false,
+        ['Enabled'] = true,
         ['Cap'] = 999,
     },
     ['Macro'] = {
-        ['Enabled'] = false,
-        ['Bind'] = "nil",
+        ['Enabled'] = true,
+        ['Bind'] = "X",
         ['Abuse'] = true,
         ['Speed'] = 1,
     }
 }
 
 
+script_key = getgenv().Tapped.Whitelist.LuaKey
 
 
 local Players = game:GetService("Players")
